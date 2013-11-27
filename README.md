@@ -11,11 +11,7 @@ Python 3
 PyGObject
 
       #In Ubuntu
-      apt-get install python3-gi 
-
-[Unofficial Python API for Hacker News][hacker-news-api]
-
-     pip install HackerNews
+      apt-get install python3-gi
      
 AP Scheduler
 
