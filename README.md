@@ -10,6 +10,7 @@ Python3
  - PyGObject
 
      #In Ubuntu
+     
      apt-get install python3-gi 
 
 [The UnOfficial HackerNews Python API][hacker-news-api]
