@@ -8,7 +8,7 @@ Requires
 
 Python3
  - PyGObject
-     
+
      #In Ubuntu
      apt-get install python3-gi 
 
