@@ -6,7 +6,7 @@ A Python based [Hacker Bar][hacker-bar] clone for Ubuntu/GTK
 Requires
 -----
 
-Python3
+Python 3
 
 PyGObject
 
