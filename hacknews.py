@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 __author__ = 'David Mitchell'
 __version__ = '0.0.1
 
