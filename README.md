@@ -1,17 +1,17 @@
 Hacker-News-Applet
 ==================
 
-A Python based [Hacker Bar][hacker-bar] clone for Ubuntu/GTK
+A Python based [Hacker Bar][hacker-bar] clone for Ubuntu/Qt (Qt Branch)
 
 Requires
 -----
 
 Python 3
 
-PyGObject
+PyQt4
 
       #In Ubuntu
-      apt-get install python3-gi
+      apt-get install python3-pyqt4
      
 AP Scheduler
 
