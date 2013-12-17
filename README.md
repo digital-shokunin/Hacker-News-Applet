@@ -22,4 +22,4 @@ AP Scheduler
 
 
 ###__Note:__ 
-Due to [limitations in the GTK Indicator](http://askubuntu.com/questions/16431/putting-an-arbitrary-gtk-widget-into-an-appindicator-indicator) I am unable to implement this in the way I had planned using Python. If I ever do Qt I might be able to in C++ similar to Empathy menu. But for now, I am stuck with the current implementation. 
+Due to [limitations in the GTK Indicator](http://askubuntu.com/questions/16431/putting-an-arbitrary-gtk-widget-into-an-appindicator-indicator) I am unable to implement this in the way I had planned using GTK library. However, I have a Qt implementation I am working on, it is located in the [Qt branch](https://github.com/digital-shokunin/Hacker-News-Applet/tree/qt), once I have it to about the same point of functionality I may merge it into the main branch and replace the GTK version.
