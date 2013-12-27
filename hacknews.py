@@ -87,17 +87,3 @@ class HackerNewsIndicator:
 if __name__ == "__main__":
     indie = HackerNewsIndicator()
     indie.main()
-    #load_settings()
-    #menu = Gtk.Menu()
-    #indie = appindicator.Indicator.new(
-    #    "hacker-news-applet",
-    #    basedir + "/art/hack-news-icon.svg",
-    #    appindicator.IndicatorCategory.APPLICATION_STATUS)
-    #indie.set_status(appindicator.IndicatorStatus.ACTIVE)
-    #indie.set_attention_icon("connect_creating")
-
-    # create a menu
-    #populate_menu(menu)
-
-
-    #Gtk.main()
