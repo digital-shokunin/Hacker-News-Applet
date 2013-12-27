@@ -12,10 +12,7 @@ PyGObject
 
       #In Ubuntu
       apt-get install python3-gi
-     
-AP Scheduler
 
-     pip install apscheduler
 
 [hacker-bar]: https://github.com/MohawkApps/Hacker-Bar
 [hacker-news-api]: https://github.com/karan/HackerNewsAPI
