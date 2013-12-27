@@ -2,10 +2,10 @@
 __author__ = 'David Mitchell'
 
 from gi.repository import Gtk
+from gi.repository import GLib
 from gi.repository import AppIndicator3 as appindicator
 from hn import HN
 import sys
-#from apscheduler.scheduler import Scheduler
 import webbrowser
 
 basedir = sys.path[0]
@@ -23,7 +23,7 @@ refresh_interval = 5
 
 class HackerNewsIndicator:
     def __init__(self):
-        wbhandle = webbrowser.get()
+        self.wbhandle = webbrowser.get()
         self.load_settings()
         self.menu = Gtk.Menu()
         self.indie = appindicator.Indicator.new(
@@ -37,13 +37,14 @@ class HackerNewsIndicator:
         self.populate_menu(self.menu)
 
 
-        #GLib.timeout_add(300000, self.handler_timeout)
+        GLib.timeout_add(300000, self.handler_timeout)
 #Setup refresh schedule
 #sched = Scheduler()
 
 #@sched.interval_schedule(minutes=refresh_interval)
     def handler_timeout(self):
-        self.populate_menu(menu)
+        self.populate_menu(self.menu)
+        return True
 
 #sched.configure(options_from_ini_file)
 #sched.start()
@@ -51,9 +52,10 @@ class HackerNewsIndicator:
     def load_settings(self):
         pass
 
-    def menuitem_response(self, story):
+    def menuitem_response(self, m, story):
         self.wbhandle.open_new(story["link"])
         #print(story["link"])
+        return True
 
     def populate_menu(self, m):
         # create and populate menu
