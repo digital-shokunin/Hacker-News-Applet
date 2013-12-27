@@ -36,18 +36,12 @@ class HackerNewsIndicator:
         # create a menu
         self.populate_menu(self.menu)
 
-
+        #Set refresh
         GLib.timeout_add(300000, self.handler_timeout)
-#Setup refresh schedule
-#sched = Scheduler()
 
-#@sched.interval_schedule(minutes=refresh_interval)
     def handler_timeout(self):
         self.populate_menu(self.menu)
         return True
-
-#sched.configure(options_from_ini_file)
-#sched.start()
 
     def load_settings(self):
         pass
