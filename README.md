@@ -6,13 +6,17 @@ A Python based [Hacker Bar][hacker-bar] clone for Ubuntu/GTK
 Requires
 -----
 
-Python 3
+Python 2
 
-PyGObject
+Python Gtk
 
+      #In Ubuntu if not already installed
+      sudo apt-get install python-gtk2
+
+beautifulsoup4
+      
       #In Ubuntu
-      apt-get install python3-gi
-
+      sudo pip install beautifulsoup4
 
 [hacker-bar]: https://github.com/MohawkApps/Hacker-Bar
 [hacker-news-api]: https://github.com/karan/HackerNewsAPI
