@@ -40,6 +40,7 @@ class HackerNewsIndicator:
         GLib.timeout_add(300000, self.handler_timeout)
 
     def handler_timeout(self):
+        self.menu = Gtk.Menu()
         self.populate_menu(self.menu)
         return True
 
@@ -48,7 +49,6 @@ class HackerNewsIndicator:
 
     def menuitem_response(self, m, story):
         self.wbhandle.open_new(story["link"])
-        #print(story["link"])
         return True
 
     def populate_menu(self, m):
