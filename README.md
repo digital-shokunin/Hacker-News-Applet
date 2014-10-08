@@ -13,10 +13,9 @@ Python Gtk
       #In Ubuntu if not already installed
       sudo apt-get install python-gtk2
 
-beautifulsoup4
-      
-      #In Ubuntu
-      sudo pip install beautifulsoup4
+Install python requirements
+
+      pip install -r requirements.txt
 
 [hacker-bar]: https://github.com/MohawkApps/Hacker-Bar
 [hacker-news-api]: https://github.com/karan/HackerNewsAPI
