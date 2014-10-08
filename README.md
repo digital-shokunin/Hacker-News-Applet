@@ -12,6 +12,10 @@ PyGObject
 
       #In Ubuntu
       apt-get install python3-gi
+      
+Install python requirements
+
+      pip install -r requirements.txt
 
 
 [hacker-bar]: https://github.com/MohawkApps/Hacker-Bar
